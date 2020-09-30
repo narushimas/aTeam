@@ -29,9 +29,11 @@ public class SimpleServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		out.print("hello ateam");
-		out.append("Served at: ").append(request.getContextPath());
+		out.println("Hello aTeam.");
+		out.println(" This is a simple servlet.");
+		out.println(new java.util.Date());		
 		
 	}
 
