@@ -1,4 +1,4 @@
-package servlet;
+//package servlet; //servlet単体で動かすことになったのでコメントアウト
 
 import java.io.IOException;
 import java.io.PrintWriter;
